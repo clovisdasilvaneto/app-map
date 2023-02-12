@@ -1,3 +1,5 @@
 import AppMap from "app-map";
 
-console.log(AppMap);
+AppMap({
+  container: "#app-map-container"
+});
