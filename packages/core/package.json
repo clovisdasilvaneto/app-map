@@ -12,5 +12,8 @@
     "eslint-config-custom": "*",
     "tsconfig": "*",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "css-inject": "^1.0.2"
   }
 }

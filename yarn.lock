@@ -437,6 +437,11 @@ cross-spawn@^7.0.2:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+css-inject@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/css-inject/-/css-inject-1.0.2.tgz#7a0142a731805c6d35ccbcd39207cb5a15dc653b"
+  integrity sha512-hnJ9PlqYzaLr/gH++AVyIK5qb/OBptI5c5NB+3PjXRShogKqLMEEr6P2aMAx4PoS9A+Qr3KDDBb4Snieb+RG2g==
+
 debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
