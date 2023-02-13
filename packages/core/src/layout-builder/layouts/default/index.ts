@@ -1,14 +1,7 @@
 import Button from "../../components/Button";
 import { withCSS } from "../../decorators";
 import defaultContainer from "./container";
-
-const css = `
-  .app-map-container {
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-  }
-`;
+import css from "./styles";
 
 function defaultLayout() {
   let appContainer;

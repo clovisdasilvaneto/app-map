@@ -3,10 +3,16 @@ const defaultContainer = (container: HTMLElement) => {
   const renderList = () => `<p>here will be the list</p>`;
   const renderSearch = () => `<p>here will be the search</p>`;
 
-  const getTemplate = () => `<article class="default-container">
-    ${renderList()}
-    ${renderSearch()}
-  </article>`;
+  section.classList.add("default-container");
+
+  const getTemplate = () => `
+    <article>
+      <h1>AppMap</h1>
+
+      ${renderList()}
+      ${renderSearch()}
+    </article>
+  `;
 
   const attach = () => {
     section.innerHTML = getTemplate();

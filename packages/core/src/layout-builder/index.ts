@@ -6,6 +6,7 @@ function layoutBuilder(appState, strategy) {
     const container = document.querySelector(appConfig.container);
 
     strategy.initialize(container);
+    strategy.attachStyles();
     strategy.render();
   };
 
