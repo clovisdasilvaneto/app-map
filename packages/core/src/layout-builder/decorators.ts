@@ -16,7 +16,7 @@ export const withCSS = (module: any, rules: string) => {
   };
 
   return (...deeps: any) => {
-    const moduleInstance = module(...deeps);
+    const moduleInstance = module(...deeps, { attachStyles, dettachStyles });
 
     return {
       attachStyles,

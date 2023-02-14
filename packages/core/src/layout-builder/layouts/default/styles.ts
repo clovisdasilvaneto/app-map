@@ -6,6 +6,7 @@ const css = `
 
   #app-map-container, #app-map-container * {
     box-sizing: border-box;
+    color: var(--app-map-default-black);
   }
 
   #app-map-container {
@@ -45,8 +46,6 @@ const css = `
     z-index: 9;
     background: var(--app-map-default-light);
     width: 100%;
-    height: 344px;
-    overflow: scroll;
     padding: 1rem;
     margin-bottom: 2rem;
   }
@@ -57,8 +56,14 @@ const css = `
     font-weight: 700;
     font-size: min(18px, 4.5vw);
     line-height: 22px;
-    margin: 0;
+    margin: 0 0 1rem;
     text-align: center;
+  }
+
+  #app-map-container .app-map-input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
   }
 `;
 

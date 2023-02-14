@@ -7,5 +7,7 @@ export const variables = `
         --app-map-default-light: #fff;
         --app-map-default-black: #000;
         --app-map-default-overlay: rgba(0, 0, 0, 0.8);
+        --app-map-default-stone: #e0e0e0;
+        --app-map-default-input-background: #fbfbfb;
     }
 `;

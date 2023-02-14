@@ -1,6 +1,6 @@
 import Button from "../../components/Button";
 import { withCSS } from "../../decorators";
-import defaultContainer from "./container";
+import defaultContainer from "./containers";
 import css from "./styles";
 
 function defaultLayout() {
