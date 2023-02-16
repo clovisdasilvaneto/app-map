@@ -1,7 +1,6 @@
-import mediator from "../mediator";
 import { IAppMapOps } from "../types";
 
-function layoutBuilder(appState, strategy) {
+function layoutBuilder(strategy) {
   const apply = (appConfig: IAppMapOps) => {
     const container = document.querySelector(appConfig.container);
 
@@ -15,4 +14,4 @@ function layoutBuilder(appState, strategy) {
   };
 }
 
-export default mediator.connect(layoutBuilder);
+export default layoutBuilder;

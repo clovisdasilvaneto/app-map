@@ -1,7 +1,7 @@
 import { withCSS } from "../../decorators";
 import styles from "./style";
 
-const Input = ({ onChange, placeholder, container }) => {
+const Input = ({ onKeyDown, placeholder, container }) => {
   const inputContainer = document.createElement("div");
   inputContainer.classList.add("app-map-input-container");
 
@@ -10,7 +10,9 @@ const Input = ({ onChange, placeholder, container }) => {
   `;
 
   const render = () => {
-    inputContainer.querySelector("input").addEventListener("change", onChange);
+    inputContainer
+      .querySelector("input")
+      .addEventListener("keydown", onKeyDown);
 
     container.appendChild(inputContainer);
   };
@@ -18,7 +20,7 @@ const Input = ({ onChange, placeholder, container }) => {
   const dettach = () => {
     inputContainer
       .querySelector("input")
-      .removeEventListener("change", onChange);
+      .removeEventListener("keyDown", onKeyDown);
 
     container.removeChild(inputContainer);
   };
