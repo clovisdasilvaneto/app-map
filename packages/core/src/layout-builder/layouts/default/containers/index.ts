@@ -56,6 +56,7 @@ const DefaultContainer = (appState, container: HTMLElement) => {
   const dettachList = () => {
     listContainer?.dettachStyles();
     listContainer?.dettach();
+    listContainer = null;
   };
 
   const attach = () => {
