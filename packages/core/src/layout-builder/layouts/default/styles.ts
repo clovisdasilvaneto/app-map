@@ -38,7 +38,16 @@ const css = `
     top: 0;
     left: 0;
     content: "";
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all ease-in;
   }
+
+  #app-map-container.app-map-overlay:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
 
   #app-map-container .default-container {
     position: relative;

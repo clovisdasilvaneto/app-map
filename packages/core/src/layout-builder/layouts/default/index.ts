@@ -4,11 +4,11 @@ import defaultContainer from "./containers";
 import css from "./styles";
 
 function defaultLayout() {
-  let appContainer;
+  let appContainer: Element;
   let container;
   let isOpened: boolean;
 
-  const initialize = (layoutContainer: string) => {
+  const initialize = (layoutContainer: Element) => {
     appContainer = layoutContainer;
     container = defaultContainer(appContainer);
   };
@@ -18,8 +18,10 @@ function defaultLayout() {
 
     if (!isOpened) {
       container.attach();
+      appContainer.classList.add("app-map-overlay");
     } else {
       container.dettach();
+      appContainer.classList.remove("app-map-overlay");
     }
 
     isOpened = !isOpened;

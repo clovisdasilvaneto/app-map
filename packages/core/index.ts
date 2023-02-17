@@ -17,4 +17,6 @@ const AppMap = (config: IAppMapOps) => {
   layout.apply(config);
 };
 
+export { IAppMapOps };
+
 export default AppMap;
