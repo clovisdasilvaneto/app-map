@@ -4,6 +4,7 @@ import styles from "./style";
 const ListItem = ({ onClick, href, label, container, active }) => {
   let instance: HTMLButtonElement;
   const listItemContainer = document.createElement("div");
+  listItemContainer.classList.add("app-map-page-link-container");
   listItemContainer.innerHTML = `
     <a href="${href}" class="app-map-page-link ${
     active ? "app-map-page-link-active" : ""

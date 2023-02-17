@@ -2,8 +2,8 @@ const styles = `
   .app-map-page-link {
     border: 1px solid var(--app-map-default-stone);
     border-radius: 4px;
-    display: inline-block;
     padding: 6px;
+    display: inline-block;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;

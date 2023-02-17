@@ -14,7 +14,8 @@ const List = ({ container, pages }: TListProps) => {
 
   listContainer.innerHTML = `
         <h2 class="app-map-list-result">Result:</h2>
-        <div class="app-map-default-list"></div>
+        <div class="app-map-default-list">
+        </div>
   `;
 
   const renderItem = (pages: TPage[], container: Element): TPage[] => {

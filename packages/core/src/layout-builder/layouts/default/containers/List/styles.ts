@@ -7,12 +7,16 @@ const styles = `
   }
 
   .app-map-default-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .6rem;
     height: 124px;
     overflow: scroll;
     margin-bottom: 2rem;
+    margin-left: -0.4rem;
+  }
+
+  .app-map-page-link-container {
+    display: inline-block;
+    margin-left: .4rem;
+    margin-bottom: .4rem;
   }
 `;
 
